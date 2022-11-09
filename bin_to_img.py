@@ -25,7 +25,7 @@ def unslice_image(in_img: Image, width=64, height=48, frames=2):
     out_img = Image.new('L', (height*frames,width))
 
     for i in range(height*frames//8):
-        out_img.paste(Image.blend(lchunks[i],rchunks[i],1/2), (i*8, 0))
+        out_img.paste(Image.blend(lchunks[i],rchunks[i],2/3), (i*8, 0))
 
     return out_img.transpose(Image.ROTATE_90)
 
