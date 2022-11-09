@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+*.narc
+*.bin
+*.png
+*.ttf
